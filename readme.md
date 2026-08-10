@@ -4,12 +4,15 @@
 @268bkmxw
 
 ## QR code
-![QR code](./images/QRcode/linebotQRcode.jpg){width=300}
+![QR code](./images/QRcode/linebotQRcode.jpg)
 
-## 截圖
+# 截圖
 
-### 可以輸入"能源"、"農產品"、"金屬"
+## 可以輸入"能源"、"農產品"、"金屬"
 
+### 輸入"能源"截圖
 ![能源截圖](./images/linebot01.png)
+### 輸入"農產品"截圖
 ![農產品截圖](./images/linebot02.png)
+### 輸入"金屬"截圖
 ![金屬截圖](./images/linebot03.png)
