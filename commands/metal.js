@@ -313,7 +313,7 @@ export default async (event) => {
         // 美元卡片
         const usd = template()
         usd.body.contents[0].text = '美元'
-        usd.body.contents[1].contents[1].text = (rsusd.at(-1)).toFixed(3).toString()
+        usd.body.contents[1].contents[1].text = (rsusd.at(-2)).toFixed(3).toString()
         usd.body.contents[2].contents[1].text = avg.toFixed(3).toString()
         usd.body.contents[3].contents[1].text = avg2.toFixed(3).toString()
         usd.body.contents[4].contents[1].text = avg3.toFixed(3).toString()
@@ -323,7 +323,7 @@ export default async (event) => {
         // 黃金卡片
         const gold = template()
         gold.body.contents[0].text = '貴金屬-黃金'
-        gold.body.contents[1].contents[1].text = (rsgd.at(-1)).toFixed(3).toString()
+        gold.body.contents[1].contents[1].text = (rsgd.at(-2)).toFixed(3).toString()
         gold.body.contents[2].contents[1].text = avg21.toFixed(3).toString()
         gold.body.contents[3].contents[1].text = avg22.toFixed(3).toString()
         gold.body.contents[4].contents[1].text = avg23.toFixed(3).toString()
@@ -333,7 +333,7 @@ export default async (event) => {
         // 白銀卡片
         const silver = template()
         silver.body.contents[0].text = '貴金屬-白銀'
-        silver.body.contents[1].contents[1].text = (rssl.at(-1)).toFixed(3).toString()
+        silver.body.contents[1].contents[1].text = (rssl.at(-2)).toFixed(3).toString()
         silver.body.contents[2].contents[1].text = avg31.toFixed(3).toString()
         silver.body.contents[3].contents[1].text = avg32.toFixed(3).toString()
         silver.body.contents[4].contents[1].text = avg33.toFixed(3).toString()
@@ -343,7 +343,7 @@ export default async (event) => {
         // 銅卡片
         const copper = template()
         copper.body.contents[0].text = '工業金屬-銅'
-        copper.body.contents[1].contents[1].text = (rscp.at(-1)).toFixed(3).toString()
+        copper.body.contents[1].contents[1].text = (rscp.at(-2)).toFixed(3).toString()
         copper.body.contents[2].contents[1].text = avg41.toFixed(3).toString()
         copper.body.contents[3].contents[1].text = avg42.toFixed(3).toString()
         copper.body.contents[4].contents[1].text = avg43.toFixed(3).toString()
