@@ -313,7 +313,7 @@ export default async (event) => {
         // 美元卡片
         const usd = template()
         usd.body.contents[0].text = '美元'
-        usd.body.contents[1].contents[1].text = (rsusd.at(-2)).toFixed(3).toString()
+        usd.body.contents[1].contents[1].text = (rsusd.at(-1)).toFixed(3).toString()
         usd.body.contents[2].contents[1].text = avg.toFixed(3).toString()
         usd.body.contents[3].contents[1].text = avg2.toFixed(3).toString()
         usd.body.contents[4].contents[1].text = avg3.toFixed(3).toString()
