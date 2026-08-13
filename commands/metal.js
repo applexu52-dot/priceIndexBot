@@ -353,7 +353,7 @@ export default async (event) => {
         // 鋁卡片
         const aluminum = template()
         aluminum.body.contents[0].text = '工業金屬-鋁'
-        aluminum.body.contents[1].contents[1].text = '33' //(rsal.at(-1)).toFixed(3).toString()
+        aluminum.body.contents[1].contents[1].text = (rsal.at(-1)).toFixed(3).toString()
         aluminum.body.contents[2].contents[1].text = avg51.toFixed(3).toString()
         aluminum.body.contents[3].contents[1].text = avg52.toFixed(3).toString()
         aluminum.body.contents[4].contents[1].text = avg53.toFixed(3).toString()
