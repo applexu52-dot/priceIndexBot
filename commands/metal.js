@@ -267,15 +267,15 @@ export default async (event) => {
         const chartData41 = await yF.chart(aluminumCode, query3Month);
         const timestamps41 = chartData41.timestamp;
         const prices41 = chartData41.indicators.quote[0];
-        let rsgs = [];
+        let rsal = [];
         timestamps41.forEach((timestamp, index) => {
-            rsgs.push(prices41.close[index]);
+            rsal.push(prices41.close[index]);
         });
         total = 0;
-        for (let i = 0; i < rsgs.length; i++) {
-            total += rsgs[i];
+        for (let i = 0; i < rsal.length; i++) {
+            total += rsal[i];
         }
-        let avg51 = total / rsgs.length;
+        let avg51 = total / rsal.length;
 
         // 3-2. 抓取歷史數據(3year 3 month)
         // const rsgs2 = await yF.historical(gascode, querybefore3Year);
@@ -352,8 +352,8 @@ export default async (event) => {
         })
         // 鋁卡片
         const aluminum = template()
-        aluminum.body.contents[0].text = '天然氣'
-        aluminum.body.contents[1].contents[1].text = (rsgs.at(-1)).toFixed(3).toString()
+        aluminum.body.contents[0].text = '工業金屬-鋁'
+        aluminum.body.contents[1].contents[1].text = (rsal.at(-2)).toFixed(3).toString()
         aluminum.body.contents[2].contents[1].text = avg51.toFixed(3).toString()
         aluminum.body.contents[3].contents[1].text = avg52.toFixed(3).toString()
         aluminum.body.contents[4].contents[1].text = avg53.toFixed(3).toString()
