@@ -18,7 +18,7 @@ export default () => ({
         contents: [
           {
             type: 'text',
-            text: '前一交易日收盤價',
+            text: '前二個交易日的收盤價',
             color: '#171717',
             size: 'sm',
             flex: 6
@@ -83,7 +83,7 @@ export default () => ({
           }
         ]
       },
-            {
+      {
         type: 'box',
         layout: 'baseline',
         spacing: 'sm',
