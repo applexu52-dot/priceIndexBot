@@ -323,7 +323,7 @@ export default async (event) => {
         // 黃金卡片
         const gold = template()
         gold.body.contents[0].text = '貴金屬-黃金'
-        gold.body.contents[1].contents[1].text = (rsgd.at(-2)).toFixed(3).toString()
+        gold.body.contents[1].contents[1].text = (rsgd.at(-1)).toFixed(3).toString()
         gold.body.contents[2].contents[1].text = avg21.toFixed(3).toString()
         gold.body.contents[3].contents[1].text = avg22.toFixed(3).toString()
         gold.body.contents[4].contents[1].text = avg23.toFixed(3).toString()

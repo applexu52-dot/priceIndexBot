@@ -326,7 +326,7 @@ export default async (event) => {
         // WTI原油卡片
         const wtiOil = template()
         wtiOil.body.contents[0].text = 'WTI原油'
-        wtiOil.body.contents[1].contents[1].text = (rswti.at(-2)).toFixed(3).toString()
+        wtiOil.body.contents[1].contents[1].text = (rswti.at(-1)).toFixed(3).toString()
         wtiOil.body.contents[2].contents[1].text = avg21.toFixed(3).toString()
         wtiOil.body.contents[3].contents[1].text = avg22.toFixed(3).toString()
         wtiOil.body.contents[4].contents[1].text = avg23.toFixed(3).toString()
@@ -337,7 +337,7 @@ export default async (event) => {
         // 布蘭特原油卡片
         const bltOil = template()
         bltOil.body.contents[0].text = '布蘭特原油'
-        bltOil.body.contents[1].contents[1].text = (rsbl.at(-2)).toFixed(3).toString()
+        bltOil.body.contents[1].contents[1].text = (rsbl.at(-1)).toFixed(3).toString()
         bltOil.body.contents[2].contents[1].text = avg31.toFixed(3).toString()
         bltOil.body.contents[3].contents[1].text = avg32.toFixed(3).toString()
         bltOil.body.contents[4].contents[1].text = avg33.toFixed(3).toString()
@@ -348,7 +348,7 @@ export default async (event) => {
         // RBOB汽油卡片
         const rboboil = template()
         rboboil.body.contents[0].text = 'RBOB汽油'
-        rboboil.body.contents[1].contents[1].text = (rsrb.at(-2)).toFixed(3).toString()
+        rboboil.body.contents[1].contents[1].text = (rsrb.at(-1)).toFixed(3).toString()
         rboboil.body.contents[2].contents[1].text = avg41.toFixed(3).toString()
         rboboil.body.contents[3].contents[1].text = avg42.toFixed(3).toString()
         rboboil.body.contents[4].contents[1].text = avg43.toFixed(3).toString()
@@ -359,7 +359,7 @@ export default async (event) => {
         // 天然氣卡片
         const gas = template()
         gas.body.contents[0].text = '天然氣'
-        gas.body.contents[1].contents[1].text = (rsgs.at(-2)).toFixed(3).toString()
+        gas.body.contents[1].contents[1].text = (rsgs.at(-1)).toFixed(3).toString()
         gas.body.contents[2].contents[1].text = avg51.toFixed(3).toString()
         gas.body.contents[3].contents[1].text = avg52.toFixed(3).toString()
         gas.body.contents[4].contents[1].text = avg53.toFixed(3).toString()
