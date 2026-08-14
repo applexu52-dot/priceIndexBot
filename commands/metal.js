@@ -343,7 +343,7 @@ export default async (event) => {
         // 銅卡片
         const copper = template()
         copper.body.contents[0].text = '工業金屬-銅'
-        copper.body.contents[1].contents[1].text = (rscp.at(-2)).toFixed(3).toString()
+        copper.body.contents[1].contents[1].text = (rscp.at(-1)).toFixed(3).toString()
         copper.body.contents[2].contents[1].text = avg41.toFixed(3).toString()
         copper.body.contents[3].contents[1].text = avg42.toFixed(3).toString()
         copper.body.contents[4].contents[1].text = avg43.toFixed(3).toString()
