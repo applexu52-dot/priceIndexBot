@@ -333,7 +333,7 @@ export default async (event) => {
         // 白銀卡片
         const silver = template()
         silver.body.contents[0].text = '貴金屬-白銀'
-        silver.body.contents[1].contents[1].text = (rssl.at(-2)).toFixed(3).toString()
+        silver.body.contents[1].contents[1].text = (rssl.at(-1)).toFixed(3).toString()
         silver.body.contents[2].contents[1].text = avg31.toFixed(3).toString()
         silver.body.contents[3].contents[1].text = avg32.toFixed(3).toString()
         silver.body.contents[4].contents[1].text = avg33.toFixed(3).toString()
